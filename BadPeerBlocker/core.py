@@ -3,13 +3,13 @@ from deluge.plugins.pluginbase import CorePluginBase
 
 class Core(CorePluginBase):
     def enable(self):
-        self.torrent_manager = component.get("TorrentManager")
-        self.torrent_manager.register_event_handler(
+        self.event_manager = component.get("EventManager")
+        self.event_manager.register_event_handler(
             "PeerAddedEvent", self.on_peer_added
         )
-
+    
     def disable(self):
-        self.torrent_manager.deregister_event_handler(
+        self.event_manager.deregister_event_handler(
             "PeerAddedEvent", self.on_peer_added
         )
 
