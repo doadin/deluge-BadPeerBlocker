@@ -1,0 +1,2 @@
+PLUGIN_NAME = "BadPeerBlocker"
+PLUGIN_VERSION = "1.0"

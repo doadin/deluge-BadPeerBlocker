@@ -1,0 +1,8 @@
+[Core]
+Name = BadPeerBlocker
+Module = BadPeerBlocker
+Version = 1.0
+License = GPL-3.0
+Author = Doadin
+Home-page = https://github.com/Doadin/deluge-BadPeerBlocker
+Description = Blocks Unknown Client Peers
